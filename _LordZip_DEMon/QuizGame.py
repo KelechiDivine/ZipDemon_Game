@@ -14,7 +14,7 @@ print("\nParis is the captial of France.")
 user_choice = input(">>> ")
 
 if user_choice in true:
-    user_choice = user_choice + 1  # If correct, the user gets one point
+    correct = correct + 1  # If correct, the user gets one point
 
 else:
     correct = correct + 0
@@ -24,7 +24,7 @@ print("\nEngland is an island.")
 user_choice = input(">>> ")
 
 if user_choice in false:
-    user_choice = user_choice + 1
+    correct = correct + 1
 
 else:
     correct = correct + 0
@@ -70,3 +70,9 @@ else:
 
 print(
 "\nYou're finished, " + name + ". You got", correct, "out of 6 correct.")
+
+# if user_choice == correct:
+#     pass
+# print(correct)
+#
+# print("Here is your scores " + correct)
