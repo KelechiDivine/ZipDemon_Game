@@ -1,6 +1,17 @@
+"""
+Make a program in which the computer randomly chooses
+a number between 1 to 10, 1 to 100, or any range. Then
+give users a hint to guess the number. Every time the
+user guesses wrong, he gets another clue, and his score
+gets reduced
+
+"""
+
+
 import random
 
 # the default set of guesstaken to zero
+
 guess_taken= 0
 
 # recieve user input and save in a variable
@@ -15,11 +26,13 @@ number= random.randint(1, 8)
 
 # create a place holder that stores the user name
 # print a message with the user name on it that tells them what to do next
+
 place_holder="{}".format(name)
-print(f"Well, {place_holder} I am thinking of a number between 1-20." )
+print(f"Well, {place_holder} I am thinking of a number between 1-8." )
 
 
 # a for loop that allows user guess at most six times
+
 for guess_taken in range(6):
     guess= int(input(place_holder + " please take a guess: "))
     print(guess)
@@ -38,6 +51,7 @@ for guess_taken in range(6):
 
 # create another if statement outside the for loop
 # that check and validates the user input
+
 if guess == number:
     guess_taken= str(guess_taken + 1)
     print("Good job, " + place_holder +  "!" + " you guessed my number in " + guess_taken
