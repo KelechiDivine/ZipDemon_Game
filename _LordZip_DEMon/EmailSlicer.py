@@ -11,5 +11,5 @@
 def email_slicer(emails):
     username, _, domain= emails.strip().partition("@")
     return 'Your user name is {}'.format(username) + ' & domain is ' + '{}'.format(domain)
-# user_input= input("Enter your name here: ")
-# print(email_slicer(user_input))
+user_input= input("Enter your name here: ")
+print(email_slicer(user_input))
