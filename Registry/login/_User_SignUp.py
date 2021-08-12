@@ -18,10 +18,9 @@ class UserSignUp():
         if "@gmail.com" in user_email:
             print("email is valid")
             
-        else:
-            print("Invalid email")
-            
-        
+        email = pd
+        if pd.isnull:
+            print("This field is required.")
             
         self.__user_email= user_email
 
@@ -57,23 +56,21 @@ class UserSignUp():
     
     
     def setUserMobile(self, mobileNumber):
-        while len(mobileNumber) == 13:
-    
-            if len(mobileNumber > 13):
-                Exception("Mobile length of out of bound.")
-                
-            if "+234" in mobileNumber:
-                print(mobileNumber)
-                
-            else:
-                break
-            
-        if len(mobileNumber) < 11:
-            Exception("Invalid phone number format.")
-            
+        # if len(mobileNumber) == 13:
+        #
+        #     if "+234" in mobileNumber:
+        #         print(mobileNumber)
+        #
+        # if len(mobileNumber) is not len(13):
+        #     # print("Invalid mobile number format.")
+        #     Exception("Mobile length of out of bound.")
+        #
+        # if len(mobileNumber) < 11:
+        #     Exception("Invalid phone number format.")
+        #
         self.__user_mobile_number = mobileNumber
 
-    def getUserMobile(self) -> str:
+    def getUserMobile(self) -> int:
         return self.__user_mobile_number
 
     # def setUserPassword(self, password):
